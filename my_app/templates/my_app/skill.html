@@ -1,0 +1,73 @@
+
+
+{% extends 'my_app/layout.html'%}
+{%load static%}
+{%block content%}
+
+<div class="container">
+
+  <div class="row">  
+    <div class="container-fluid" style="margin-top: 8mm;">
+         <div class="alert-primary " role="alert">
+          <div class="container"> 
+            <nav class="navbar navbar-expand-lg navbar- light">
+                <div class="container-fluid" >
+                 
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseLinks" aria-expanded="false" aria-label="Toggle Navigation">
+                      <span class="navbar-toggler-icon"></span> 
+                    </button> 
+                    <a  class ="flex-sm-fill text-sm-center nav-link" href="{% url 'index' %}" >DigiWorks</a>
+                    <div class=" collapse navbar-collapse" id="navbarCollapseLinks">
+                     <ul class="navbar-nav">
+                        <li class="flex-sm-fill text-sm-center nav-link " >
+                            <a  class ="flex-sm-fill text-sm-center nav-link"  href="{% url 'about' %}" >About</a>
+                        </li>
+        
+                        <li class="flex-sm-fill text-sm-center nav-link" >
+                            <a class ="flex-sm-fill text-sm-center nav-link" href="{% url 'contact' %}" >Contact</a>
+                        </li>
+        
+                        <li class="flex-sm-fill text-sm-center nav-link" >
+                            <a class ="flex-sm-fill text-sm-center nav-link"  href="{% url 'skillset' %}" >Skill Set</a>
+                        </li>
+        
+                        <li class="flex-sm-fill text-sm-center nav-link" >
+                            <a class ="flex-sm-fill text-sm-center nav-link" href="{% url 'experience' %}">Experience</a>
+                        </li>
+                     </ul>
+                    </div>
+                </div>
+             </nav>
+          </div>
+      </div>
+<div class="container-fluid" style="padding-top: 15mm;">
+<div class = 'row' >
+    <div class="col-md-3" >
+      <h4 style="font-weight: bold;" >Here are some of the skills that I have:  </h4>
+       <div class="container-fluid" style="font-weight: 500;">
+          <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>Data Wrangling</li>
+            <li>Data Visualization</li>
+            <li>System Analysis and Design</li>
+            <li>Web and Mobile Apps Development</li>
+            <li>Cloud Technologies- Azure, Google Cloud</li>
+            <li>Machine Learning</li>
+            <li>DevOps</li>
+          </ul>
+       </div> 
+    </div>
+    <div class="col 2" >
+      <div class="navbar-text pull-right">
+        <img src="{%static 'my_app/bg.jpeg'%}" class="rounded" /> 
+     </div> 
+
+     <!-- <div class="col 2">
+      <div class="alert-primary " role="alert">
+        <img src="{%static 'my_app/elly.JPG'%}" class="rounded-circle"/> 
+      </div>
+     </div>    
+   </div> -->
+  </div>
+</div>
+{%endblock%}

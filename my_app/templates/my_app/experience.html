@@ -1,0 +1,108 @@
+{% extends 'my_app/layout.html'%}
+
+{%load static%}
+{%block content%}
+<div class="container">
+
+  <div class="row">  
+    <div class="container-fluid"> 
+         <div class="alert-primary " role="alert" style="margin-top: 8mm;">
+          <!-- <div class="container">  -->
+            <nav class="navbar navbar-expand-lg navbar- light">
+                <div  class = "collapse navbar-collapse" id="navbarNavAltMarkup"  >
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span> 
+                    </button>
+                    <a  class ="flex-sm-fill text-sm-center nav-link" href="{% url 'index' %}" >DigiWorks</a>
+                    <div></div>
+                     <ul class="navbar-nav">
+                        <li class="flex-sm-fill text-sm-center nav-link " >
+                            <a  class ="flex-sm-fill text-sm-center nav-link"  href="{% url 'about' %}" >About</a>
+                        </li>
+        
+                        <li class="flex-sm-fill text-sm-center nav-link" >
+                            <a class ="flex-sm-fill text-sm-center nav-link" href="{% url 'contact' %}" >Contact</a>
+                        </li>
+        
+                        <li class="flex-sm-fill text-sm-center nav-link" >
+                            <a class ="flex-sm-fill text-sm-center nav-link"  href="{% url 'skillset' %}" >Skill Set</a>
+                        </li>
+        
+                        <li class="flex-sm-fill text-sm-center nav-link" >
+                            <a class ="flex-sm-fill text-sm-center nav-link" href="{% url 'experience' %}">Experience</a>
+                        </li>
+                     </ul>
+                    </div>
+                </div>
+             </nav>
+          <!-- </div> -->
+      </div>
+        <h3>Building and Working with developers community</h3> 
+    </div>
+  </div>
+  
+  <div class="row mt-2" id="1">
+      <div class="col mt-2">
+        <div class="alert-secondary " role="alert" style="min-height: 350px;">
+         <p>I love working with tech communities and promoting tech communities <br>
+           I have experience in hosting  and organizing
+             <li>Workshops</li>
+             <li>Hackathons</li>
+             <li>Peer Codings</li>
+             <li>Competitions</li>
+          for the tech communities I represent in Kenyatta University
+          I have also participated in several competitions such as
+             <li>IBM</li>
+             <li>Huawei ICT Competitions 2018 and 2019</li>
+             <li>Google Africa Developers Scholarship</li>
+         </p>  
+       </div>
+     </div>
+
+      <div class="col 3 mt-2" id="2">
+        <div class="alert-secondary " role="alert">
+          <img src="{%static 'my_app/cloudapp.png'%}" alt=""  style='height: 100%; width: 100%; object-fit: contain' /> 
+        </div>
+     </div>
+    
+     <div class="col 2 mt-2" id="3">
+      <div class="alert-secondary " role="alert">
+      <img src="{%static 'my_app/cloud-intro.png'%}" alt=""  style='height: 100%; width: 100%; object-fit: contain'/>  
+     </div>
+
+     <div class="col 2 mt-3" id="4">
+        <div class="alert-secondary" role="alert">
+        <img src="{%static 'my_app/cyber.png'%}" alt=""  style='height: 100%; width: 100%; object-fit: contain'/>  
+       </div> 
+       <div...></div> <div...></div> 
+
+     
+     
+  </div>
+  <div class="row  2 mr-3"  id = '4'>
+    <div class="alert-secondary " role="alert">
+    <img src="{%static 'my_app/cyber.png'%}" alt=""  style='height: 55%; width: 75%; object-fit: contain'/>  
+   </div>
+</div>
+
+<div class=" col mt-3" id="1">
+  <div class="col mt-2">
+    <div class="alert-secondary " role="alert" style='height: 50%; width: 50%; object-fit: contain';>
+     <p>
+       Currently am Ambassador for the following :
+         <li>Microsoft Student Partners</li>
+         <li>Huawei ICT Academy</li>
+         <li>Moringa School of Code</li>
+         <li>Ingressive Learning Community</li>
+      the tech communities that  I represent in Kenyatta University
+      
+   </div>
+ </div>
+</div>
+ 
+
+
+
+
+ 
+{%endblock%} 
