@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-md navbar-light bg-alert">
+    <div class="container" >
+        <a  class ="navbar-brand" href="{% url 'index' %}" >DigiWorks</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseLinks" aria-controls="navbarCollapseLinks" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span> 
+        </button> 
+        <div class=" collapse navbar-collapse" id="navbarCollapseLinks">
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item" >
+                <a class ="nav-link"  href="{% url 'about' %}" >About</a>
+            </li>
+
+            <li class="nav-item" >
+                <a class ="nav-link" href="{% url 'contact' %}" >Contact</a>
+            </li>
+
+            <li class="nav-item" >
+                <a class ="nav-link" href="{% url 'skillset' %}" >Skill Set</a>
+            </li>
+
+            <li class="nav-item" >
+                <a class ="nav-link" href="{% url 'experience' %}">Experience</a>
+            </li>
+         </ul>
+        </div>
+
+    </div>
+ </nav>

@@ -1,41 +1,15 @@
 {% extends 'my_app/layout.html'%}
 
 {%load static%}
+
 {%block content%}
 <div class="container">
 
-  <div class="row">  
+   <div class="row">  
     <div class="container-fluid"> 
          <div class="alert-primary " role="alert" style="margin-top: 8mm;">
-          <!-- <div class="container">  -->
-            <nav class="navbar navbar-expand-lg navbar- light">
-                <div  class = "collapse navbar-collapse" id="navbarNavAltMarkup"  >
-                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span> 
-                    </button>
-                    <a  class ="flex-sm-fill text-sm-center nav-link" href="{% url 'index' %}" >DigiWorks</a>
-                    <div></div>
-                     <ul class="navbar-nav">
-                        <li class="flex-sm-fill text-sm-center nav-link " >
-                            <a  class ="flex-sm-fill text-sm-center nav-link"  href="{% url 'about' %}" >About</a>
-                        </li>
-        
-                        <li class="flex-sm-fill text-sm-center nav-link" >
-                            <a class ="flex-sm-fill text-sm-center nav-link" href="{% url 'contact' %}" >Contact</a>
-                        </li>
-        
-                        <li class="flex-sm-fill text-sm-center nav-link" >
-                            <a class ="flex-sm-fill text-sm-center nav-link"  href="{% url 'skillset' %}" >Skill Set</a>
-                        </li>
-        
-                        <li class="flex-sm-fill text-sm-center nav-link" >
-                            <a class ="flex-sm-fill text-sm-center nav-link" href="{% url 'experience' %}">Experience</a>
-                        </li>
-                     </ul>
-                    </div>
-                </div>
-             </nav>
-          <!-- </div> -->
+          <div class="container"> 
+          </div> 
       </div>
         <h3>Building and Working with developers community</h3> 
     </div>
@@ -72,17 +46,13 @@
 
      <div class="col 2 mt-3" id="4">
         <div class="alert-secondary" role="alert">
-        <img src="{%static 'my_app/cyber.png'%}" alt=""  style='height: 100%; width: 100%; object-fit: contain'/>  
+        <img src="{%static 'my_app/cyber.png'%}" alt=""  style='height: 50%; width: 100%; object-fit: contain'/>  
        </div> 
        <div...></div> <div...></div> 
 
      
      
   </div>
-  <div class="row  2 mr-3"  id = '4'>
-    <div class="alert-secondary " role="alert">
-    <img src="{%static 'my_app/cyber.png'%}" alt=""  style='height: 55%; width: 75%; object-fit: contain'/>  
-   </div>
 </div>
 
 <div class=" col mt-3" id="1">
